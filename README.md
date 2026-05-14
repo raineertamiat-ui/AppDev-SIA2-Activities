@@ -10,10 +10,11 @@ This repository serves as a compiled portfolio of all laboratory activities comp
 ## List of Activities
 
 ### Systems Integration and Architecture 2 (SIA 2)
-* **[Activity 2 - SIA](./Activity%202%20-%20SIA)** – **Laravel Mini System**: Built a custom information system using Laravel, focusing on routing and Blade templating.
+* **[Activity 1 - SIA](./Activity%201%20-%20SIA)** – **UML Final Project Title & Design Proposal**: Brainstormed a software system idea and created a professional project title, problem statement, and a preliminary UML diagram (Use Case or Class Diagram) for the final project proposal.
+* **[Activity 2 - SIA](./Activity%202%20-%20SIA)** – **Laravel Mini System**: Built a custom information system using Laravel, focusing on routing, controller logic, and Blade templating.
 * **[Activity 3 - SIA](./Activity%203%20-%20SIA)** – **Laravel CRUD System**: A database-driven application featuring MySQL connections, migrations, and full CRUD operations.
 * **[Activity 4 - SIA](./Activity%204%20-%20SIA)** – **Form Handling & Validation**: Focused on creating secure HTML forms with CSRF protection and server-side validation.
 * **[Activity 5 - SIA](./Activity%205%20-%20SIA)** – **API Integration**: Integrated Laravel Breeze for authentication and consumed data from a public API.
 
 ### Application Development
-* **[Activity 2 - AppDev](./Activity%202%20-%20AppDev)** – **UML Diagram Design Project**: Designed a system concept and represented its architecture through UML diagrams.
+* **[Activity 2 - AppDev](./Activity%202%20-%20AppDev)** – **UML Diagram Design Project**: Designed a system concept and represented its architecture through professional UML diagrams.
