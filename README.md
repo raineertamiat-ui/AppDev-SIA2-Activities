@@ -1,4 +1,8 @@
 # AppDev-SIA2-Activities
+# Student Name: Raineer P. Tamiat
+# Course & Section: BSIT 3-A
+# Subject Name: Application Development & Systems Integration and Architecture
+
 # SIA 2 Activities
 # Activity 2 – Individual Activity: Laravel Mini System. This project involved building a custom information system using Laravel, focusing on routing, controller logic, and Blade templating to display a dataset of at least 5 items.
 # Activity 3 – Individual Activity: Laravel CRUD System with Database. A database-driven application where I configured MySQL connections, created migrations, and implemented full CRUD (Create, Read, Update, Delete) operations.
