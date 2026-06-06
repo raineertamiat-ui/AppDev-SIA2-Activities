@@ -1,0 +1,29 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+class UserSeeder extends Seeder
+{
+    public function run(): void
+    {
+        // 1. Regular Client Account Configuration
+        User::create([
+            'full_name' => 'John Doe',
+            'email' => 'client@gmail.com',
+            'password' => Hash::make('password123'),
+            'role' => 'User'
+        ]);
+
+        // 2. Specialized Veterinarian Account Configuration
+        User::create([
+            'full_name' => 'Dr. Elizabeth Blackwell',
+            'email' => 'vet@gmail.com',
+            'password' => Hash::make('password123'),
+            'role' => 'Veterinarian'
+        ]);
+    }
+}
