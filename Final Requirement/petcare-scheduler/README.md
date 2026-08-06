@@ -188,7 +188,7 @@ This project includes complete documentation containing:
 
 BS Information Technology
 
-System Integration and Architecture 2 :contentReference[oaicite:7]{index=7}
+System Integration and Architecture 2
 
 ---
 
