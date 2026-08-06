@@ -1,59 +1,252 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PetCare Scheduler
+### A UML-Driven Veterinary Appointment System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+PetCare Scheduler is a web-based veterinary appointment management system designed to simplify appointment scheduling for pet owners while providing veterinarians with an efficient dashboard to manage consultations. The system replaces manual appointment books with a secure, database-driven platform that improves workflow and reduces scheduling conflicts. :contentReference[oaicite:0]{index=0}
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+##  Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Pet Owner
+- User Registration and Login
+- Manage Pet Profiles
+- Book Veterinary Appointments
+- View Appointment Status
+- Cancel Appointments
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Veterinarian
+- Secure Login
+- View Appointment Queue
+- Approve and Manage Appointments
+- Update Appointment Status
+- Delete Cancelled Records
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+##  Technologies Used
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Font Awesome
 
-## Laravel Sponsors
+### Backend
+- PHP
+- Laravel Framework
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Database
+- MySQL
 
-### Premium Partners
+### Development Tools
+- Visual Studio Code
+- Laravel Artisan CLI
+- Browser Developer Tools :contentReference[oaicite:1]{index=1}
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+##  System Modules
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Authentication System
+- User Management
+- Pet Management
+- Appointment Scheduling
+- Veterinary Dashboard
+- Appointment Status Tracking
+- Database Management
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+##  User Roles
 
-## Security Vulnerabilities
+### Pet Owner
+- Register an account
+- Manage multiple pet profiles
+- Book appointments
+- Cancel appointments
+- View appointment history
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Veterinarian
+- Monitor appointment requests
+- Claim appointments
+- Approve or reject bookings
+- Manage appointment records
+- Update appointment status :contentReference[oaicite:2]{index=2}
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##  Database Structure
+
+The system consists of four main tables:
+
+- **Users**
+- **Pets**
+- **Veterinarians**
+- **Appointments**
+
+Relationships:
+
+```
+User
+ └── owns many Pets
+
+Pet
+ └── has many Appointments
+
+Veterinarian
+ └── handles many Appointments
+```
+
+---
+
+##  UML Diagrams
+
+The project documentation includes:
+
+- Use Case Diagram
+- System Flowchart
+- UML Class Diagram
+- System Architecture Diagram :contentReference[oaicite:3]{index=3}
+
+---
+
+##  Security Features
+
+- Role-Based Authentication
+- Laravel Middleware Protection
+- Session Authentication
+- Credential Verification
+- MySQL Foreign Key Constraints
+- Secure Fetch Requests
+- Protected Veterinary Dashboard :contentReference[oaicite:4]{index=4}
+
+---
+
+##  Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/petcare-scheduler.git
+```
+
+### Navigate into the project
+
+```bash
+cd petcare-scheduler
+```
+
+### Install dependencies
+
+```bash
+composer install
+npm install
+```
+
+### Configure environment
+
+```bash
+cp .env.example .env
+```
+
+Update the database configuration inside the `.env` file.
+
+### Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### Run migrations
+
+```bash
+php artisan migrate
+```
+
+### Start the development server
+
+```bash
+php artisan serve
+```
+
+Visit:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+##  Project Structure
+
+```
+PetCare-Scheduler
+│
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+├── .env
+├── composer.json
+└── README.md
+```
+
+---
+
+##  Objectives
+
+- Replace manual veterinary appointment scheduling.
+- Improve clinic workflow efficiency.
+- Prevent appointment conflicts.
+- Provide secure role-based access.
+- Maintain organized pet and appointment records. :contentReference[oaicite:5]{index=5}
+
+---
+
+## 📈 Future Improvements
+
+- Email and SMS Notifications
+- Appointment Conflict Detection
+- Medical History Records
+- Inventory Management
+- Health Statistics Dashboard
+- Modular System Architecture :contentReference[oaicite:6]{index=6}
+
+---
+
+##  Documentation
+
+This project includes complete documentation containing:
+
+- Introduction
+- Objectives
+- Scope and Limitations
+- System Description
+- Technologies Used
+- UML Diagrams
+- Database Design
+- Implementation and Testing
+- Interface Screenshots
+- Conclusion
+- Recommendations
+
+---
+
+##  Developer
+
+**Raineer P. Tamiat**
+
+BS Information Technology
+
+System Integration and Architecture 2 :contentReference[oaicite:7]{index=7}
+
+---
+
+##  License
+
+This project is developed for educational purposes and academic requirements.
